@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark e Light mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black min-h-screen">
+    <main class="min-h-screen flex justify-center py-5 px-4">
+
+        <div class="w-full max-w-[1000px] h-[1300px] bg-gray-100 rounded-xl">
+            <header class="h-[70px] flex items-center justify-between bg-white rounded-t-xl">
+
+                <div class="p-4 flex items-center gap-4">
+                    <img src="assets/Background.png" alt="">
+                    <span class="text-xs font-bold dark:text-white"> Minimal Store </span>
+                </div>
+                
+                <!-- BOTÃO DARK/LIGHT -->
+                <button onclick="toggleMode()" type="button"
+                        class="text-left h-[29px] w-[155px] items-center justify-start rounded-full 
+                           bg-gray-100 border border-gray-200 dark:border
+                           text-[10px] font-medium pl-4
+                           text-gray-600 dark:text-gray-400
+                           hover:text-black dark:hover:text-white
+                           transition">
+
+                    Dark mode
+
+                </button>
+
+            </header>
+            
+        </div>
+
+    </main>
+
+</body>
+</html>
