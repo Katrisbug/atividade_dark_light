@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark e Light mode</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black min-h-screen">
@@ -18,13 +19,13 @@
                 </div>
                 
                 <!-- BOTÃO DARK/LIGHT -->
-                <button onclick="toggleMode()" type="button"
+                <button id= modeButton onclick="toggleMode()" type="button"
                         class="text-left h-[29px] w-[145px] items-center justify-start rounded-full 
-                           bg-gray-100 border border-gray-200 dark:border
-                           text-[10px] font-medium pl-4
-                           text-gray-600 dark:text-gray-400
-                           hover:text-black dark:hover:text-white
-                           transition">
+                        bg-gray-100 border border-gray-200
+                        text-[10px] font-medium pl-4
+                        text-gray-600
+                        hover:text-black
+                        transition">
 
                     Dark mode
 
@@ -93,7 +94,7 @@
                                     Telefone/WhatsApp
                                 </label>
 
-                                <input type="number" placeholder="(11) 98982-9098" class="w-full h-9 border border-gray-400 rounded-md text-[10px] text-gray-800 dark:text-gray-200 outline-none focus:border-gray-500 pl-4">
+                                <input type="tel" placeholder="(11) 98982-9098" class="w-full h-9 border border-gray-400 rounded-md text-[10px] text-gray-800 dark:text-gray-200 outline-none focus:border-gray-500 pl-4">
                             
                             </div>
                             
@@ -527,4 +528,5 @@
     
 
 </body>
+<script src="JS/script.js" ></script>
 </html>
