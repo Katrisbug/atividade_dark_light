@@ -129,3 +129,8 @@ html.dark body {
     html.dark button.bg-gray-900:hover {
         background-color: #ffffff !important;
     }
+
+     /* Botão Aplicar cupom no Dark Mode */
+    html.dark button {
+        color: #ffffff;
+    }
